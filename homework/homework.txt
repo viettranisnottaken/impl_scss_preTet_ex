@@ -1,0 +1,24 @@
+06/01/2020
+
+today I learned: 
+ - display
+ - box sizing
+
+1. how to align a div vertically: done
+2. how to eliminate user agent stylesheet (hint: float)
+3. why parents cant contain child with float: done
+4. margin collapse
+5. inline block
+
+skype: boreas.55724
+
+=====================================================================
+
+08/01/2020
+
+today I learned: 
+  - visibility
+  - item:not(:first-child): every element inside item but first child
+  - overflow
+  - vertical-align can only be used in table cell
+  - align-items and justify-content depends on flex-direction

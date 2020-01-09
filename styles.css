@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 25px;
+  border: 10px solid green;
+  box-sizing: border-box;
+}
+
+/* inline vs inline-block: we cant set width and height for inline */
+/* user agent stylesheet */
+/* float, negative margin */
+
+.block1 {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.block2 {
+  display: inline-block;
+  margin-left: 30px;
+}

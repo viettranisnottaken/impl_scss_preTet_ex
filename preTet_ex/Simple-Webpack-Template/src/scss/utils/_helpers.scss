@@ -1,0 +1,30 @@
+.container {
+  margin: 30px 100px;
+  min-height: 500px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.background-gray {
+  background-image: url("~images/gray-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+.poster {
+  display: inline-block;
+  padding: 40px;
+  background-color: $primary-color;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+
+  &:hover {
+    border-bottom: 3px solid #f7cf62;
+  }
+
+  &:hover {
+    .logo {
+      color: #f7cf62;
+    }
+  }
+
+  .logo {
+    border: 20px solid white;
+    border-radius: 50%;
+    background-color: white;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,11 @@
+When margin collapse happens vertically (top + bottom margin)
+1. if 2 elements are equal:
+  - if both of which margins are negative or positive, the one with greater absolute margin 
+  value overrides the other
+  - if one is negative and one is positive, the margin = difference between the 2
+2. if one element is a parent and the other is its child
+ - if there is nothing between the parent's top/bottom margin and the child's top/bottom
+  margin respectively, the parent's margin prevails
+  - if there is anything between, they stack
+  - if there is no content within the child then the child's margin goes outside the parent's
+  if its absolute value is greater

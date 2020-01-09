@@ -1,0 +1,30 @@
+.parent-box {
+  background-color: #0000ff;
+  box-sizing: border-box;
+}
+
+.float-box {
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #ffa500;
+  opacity: 0.5;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.purple {
+  background-color: #800080;
+}
+
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}

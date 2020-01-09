@@ -1,0 +1,10 @@
+3 things to remember about float:
+- Float elements do not conform to the normal flow (where elements lie on top of each other), 
+they literally float above
+- Because they dont conform to the normal flow, they are invisible to their parents. However,
+their position is still bounded by the top and side edge of their parents, which is why they 
+will try to be as close to the top left/right as possible, but will not extend outside of their
+parent's edge.
+- Contents (words and images, etc.) all steer clear from float elements, meaning you wont see
+any float elements lie on top of contents. If the contents are added after float, they avoid 
+element, if they are added before float, they push the float down

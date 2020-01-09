@@ -1,0 +1,29 @@
+// .row {
+//   display: grid;
+//   grid-template-columns: auto auto auto;
+//   grid-column-gap: 30px;
+//   justify-content: center;
+//   margin: 0;
+// }
+// is not supported by every browser
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%;
+
+  .col {
+    box-sizing: border-box;
+    margin: 30px;
+    // no margin collapse in flexbox
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

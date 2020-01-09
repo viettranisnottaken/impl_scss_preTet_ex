@@ -1,0 +1,19 @@
+.parent1 {
+  margin: 100px;
+  background-color: #ff0000;
+}
+
+.parent2 {
+  margin: 50px;
+  background-color: #0000ff;
+}
+
+.child {
+  margin: 500px;
+  background-color: #008000;
+}
+
+.child2 {
+  background-color: #ffff00;
+  margin: 200px;
+}

@@ -1,0 +1,30 @@
+.navbar {
+  background-color: $primary-color;
+  width: 100%;
+  position: sticky;
+
+  .brand {
+    padding: 15px;
+    color: #ffffff;
+    display: inline-block;
+  }
+
+  .nav-items {
+    float: right;
+    cursor: pointer;
+  }
+
+  .nav-item {
+    display: inline-block;
+  }
+
+  .nav-link {
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+  }
+
+  .nav-item:not(.dropdown-toggle):hover {
+    border-bottom: 5px solid #ffffff;
+  }
+}

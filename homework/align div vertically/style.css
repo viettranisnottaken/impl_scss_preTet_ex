@@ -1,0 +1,56 @@
+/* solution 1: transform translate */
+/* .outer {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.vertical-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10em;
+  height: 5em;
+  border: 5px solid black;
+} */
+
+/* it is the top left corner point of the div is in the middle of the screen, 
+not its center, hence the translate -50%  */
+
+/* solution 2: flexbox with margin */
+/* .outer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.vertical-center {
+  margin: auto;
+  width: 10em;
+  height: 5em;
+  border: 5px solid black;
+} */
+
+/* solution 3: flexbox with align-items + justify-content */
+.outer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-center {
+  width: 10em;
+  height: 5em;
+  border: 5px solid black;
+}
