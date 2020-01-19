@@ -1,5 +1,16 @@
-.btn-primary {
-  background-color: #02b4b4;
-  color: #ffffff;
-  border: none;
+.btn {
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+
+  &--primary {
+    background-color: $primary-color;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #ffffff;
+
+    &:active {
+      background-color: $primary-color-darkened;
+    }
+  }
 }
