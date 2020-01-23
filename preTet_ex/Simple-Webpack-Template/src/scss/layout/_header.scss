@@ -1,19 +1,23 @@
 .navbar {
   width: 100%;
   height: 75px;
-  padding: 0 5%;
+  position: relative;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 
   &__brand {
-    display: inline-block;
     width: 10%;
     font-size: 25px;
+    position: absolute;
+    left: 7%;
   }
 
   &__items {
-    width: 80%;
+    position: absolute;
+    font-size: 15px;
+    left: 20%;
+    right: 20%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -22,13 +26,25 @@
   &__item {
     display: inline-block;
     padding: 15px 25px;
+
+    &:hover {
+      .navbar__link {
+        color: $primary-color;
+      }
+
+      .arrow--down {
+        border-bottom: 1.5px solid $primary-color;
+        border-right: 1.5px solid $primary-color;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 7%;
   }
 
   &__link {
     color: #3c4858;
-
-    &:hover {
-      color: $primary_color;
-    }
   }
 }

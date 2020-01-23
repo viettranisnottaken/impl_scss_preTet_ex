@@ -1,0 +1,6 @@
+@mixin font-config($size) {
+  font-size: $size;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+}

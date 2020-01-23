@@ -6,8 +6,8 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
 @import "utils/variables";
 @import "utils/functions";
-@import "utils/helpers";
 @import "utils/mixins";
+@import "utils/helpers";
 
 @import "base/reset";
 @import "base/typography";
@@ -15,6 +15,10 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "components/poster";
 @import "components/dropdown";
 @import "components/buttons";
+@import "components/list";
+@import "components/arrow";
+@import "components/bubble";
+@import "components/form";
 
 @import "layout/grid";
 @import "layout/header";
