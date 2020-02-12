@@ -1,0 +1,17 @@
+.bubble {
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.082), 0 0 5px rgba(0, 0, 0, 0.103);
+  padding: 20px 0;
+  margin-left: 20px;
+  text-align: start;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.082);
+    transform: rotate(135deg) translateX(10px);
+    background-color: #ffffff;
+  }
+}

@@ -2,15 +2,37 @@
   border-radius: 10px;
   cursor: pointer;
   outline: none;
+  box-shadow: 0px 3px 5px rgba(47, 85, 212, 0.3);
+  margin: 0 5px;
+  @include font-config(18px);
 
   &--primary {
     background-color: $primary-color;
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 13px 25px;
     color: #ffffff;
 
     &:active {
       background-color: $primary-color-darkened;
+      transition: 0.2s;
+    }
+
+    &--reverse {
+      background-color: #ffffff;
+      color: $primary-color;
+      padding: 12px 24px;
+      border: 1px solid $primary-color;
+
+      &:hover {
+        background-color: $primary-color;
+        color: #ffffff;
+        transition: 0.2s;
+      }
+
+      &:active {
+        background-color: $primary-color-darkened;
+        transition: 0.2s;
+      }
     }
   }
 }

@@ -9,14 +9,20 @@
 
 .row {
   display: flex;
-  justify-content: space-around;
   margin: 0;
-  width: 100%;
 
   .col {
     box-sizing: border-box;
     margin: 30px;
     // no margin collapse in flexbox
+
+    &--50 {
+      width: 50%;
+    }
+
+    &--30 {
+      width: 30%;
+    }
 
     &:first-child {
       margin-left: 0;
