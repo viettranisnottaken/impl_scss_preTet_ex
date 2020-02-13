@@ -1,16 +1,31 @@
 .btn {
-  border-radius: 10px;
-  cursor: pointer;
+  padding: 15px 20px;
+  margin: 20px;
+  border-radius: 30px;
   outline: none;
+}
 
-  &--primary {
-    background-color: $primary-color;
-    font-size: 14px;
-    padding: 10px 20px;
-    color: #ffffff;
+@each $name, $colors in $button-colors {
+  .btn-#{$name} {
+    color: map-get($colors, "color");
+    background-color: map-get($colors, "bg-color");
+    border-color: map-get($colors, "bg-color");
+    transition: all 0.25s ease-in-out;
 
-    &:active {
-      background-color: $primary-color-darkened;
+    &:hover {
+      background-color: map-get($colors, "bg-color-hover");
+      color: map-get($colors, "color-hover");
+      border-color: map-get($colors, "bg-color-hover");
+      cursor: pointer;
+    }
+
+    &[disable] {
+      cursor: not-allowed;
+      @if $name == "default" {
+        background-color: #cdcdcd;
+      } @else {
+        background-color: lighten(map-get($colors, "bg-color"), 15%);
+      }
     }
   }
 }

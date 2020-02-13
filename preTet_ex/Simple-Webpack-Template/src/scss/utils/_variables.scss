@@ -1,4 +1,44 @@
-$primary-color: #2f55d4;
-$primary-color-darkened: #2443ac;
-$header-color: #303952;
-$small-color: #333;
+$primary-color: #ffffff;
+$primary-color-hover: #ffffff;
+$primary-bg-color: #f4623a;
+$primary-bg-color-hover: #ee3e0d;
+
+$secondary-color: #6c757d;
+$secondary-color-hover: #6c757d;
+$secondary-bg-color: #ffffff;
+$secondary-bg-color-hover: #e2e6ea;
+
+$default-color: #000000;
+$default-color-hover: #000000;
+$default-bg-color: #343a40;
+$default-bg-color-hover: #ffffff;
+
+$default-para-color: rgba(255, 255, 255, 0.75);
+
+$button-colors: (
+  primary: (
+    color: $primary-color,
+    color-hover: $primary-color-hover,
+    bg-color: $primary-bg-color,
+    bg-color-hover: $primary-bg-color-hover
+  ),
+  secondary: (
+    color: $secondary-color,
+    color-hover: $secondary-color-hover,
+    bg-color: $secondary-bg-color,
+    bg-color-hover: $secondary-bg-color-hover
+  ),
+  default: (
+    color: $default-color,
+    color-hover: $default-color-hover,
+    bg-color: $default-bg-color,
+    bg-color-hover: $default-bg-color-hover
+  )
+);
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);

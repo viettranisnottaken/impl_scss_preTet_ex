@@ -4,63 +4,203 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Landrick Project</title>
+    <title>Responsive</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a class="navbar__brand" href="">Landrick.</a>
-      <ul class="navbar__items">
-        <li class="navbar__item">
-          <a class="navbar__link" href="">
-            Home
-          </a>
-        </li>
-        <li class="navbar__item dropdown">
-          <a class="navbar__link" href="">
-            Landing
-          </a>
-          <ul class="dropdown__items">
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">SAAS</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">AGENCY</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">APPLICATION</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">STUDIO</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">BUSINESS</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">MODERN BUSINESS</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">HOTEL</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">MARKETING</a>
-            </li>
-            <li class="dropdown__item">
-              <a class="dropdown__link" href="">ENTERPRISE</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="">
-            Pages
-          </a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="">
-            Doc
-          </a>
-        </li>
-      </ul>
-      <button class="btn btn--primary ">Buy now</button>
-    </nav>
+    <main class="main">
+      <nav class="navbar">
+        <a class="navbar__brand" href="#">Start Bootstrap</a>
+
+        <button class="navbar__burger"><i class="fas fa-bars"></i></button>
+        <ul class="navbar__items">
+          <li class="navbar__item">
+            <a class="navbar__link" href="">About</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">Services</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="section">
+        <img class="section__bg-img" src="../images/Rectangle.png" alt="" />
+        <div class="container section__content">
+          <div class="d-flex flex-column align-items-center">
+            <h1 class="upcase">
+              Your Favorite Source of Free Bootstrap Themes
+            </h1>
+            <div class="dash dash--primary"></div>
+            <p class="section__para">
+              Start Bootstrap can help you build better websites using the
+              Bootstrap framework! Just download a theme and start customizing,
+              no strings attached!
+            </p>
+            <button class="btn btn-primary upcase">Find Out More</button>
+          </div>
+        </div>
+      </section>
+      <section class="section section--bg-color section--bg-color--primary">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
+            <h3 class="">We've got what you need!</h3>
+            <div class="dash dash--secondary"></div>
+            <p class="section__para">
+              Start Bootstrap has everything you need to get your new website up
+              and running in no time! Choose one of our open source, free to
+              download, and easy to use themes! No strings attached!
+            </p>
+            <button class="btn btn-secondary upcase">Get Started!</button>
+          </div>
+        </div>
+      </section>
+      <section class="section section--secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center">
+              <h3 class="section--secondary__header">At Your Service</h3>
+              <div class="dash dash--primary"></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="icon icon--primary fas fa-gem fa-5x mb-4"></i>
+              <h4 class="mb-4 section--secondary__header">Sturdy Themes</h4>
+              <p class="mb-4 section--secondary__para">
+                Our themes are updated regularly to keep them bug free!
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="icon icon--primary fas fa-laptop-code fa-5x mb-4"></i>
+              <h4 class="mb-4 section--secondary__header">Up to Date</h4>
+              <p class="mb-4 section--secondary__para">
+                All dependencies are kept current to keep things fresh.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="icon icon--primary fas fa-globe fa-5x mb-4"></i>
+              <h4 class="mb-4 section--secondary__header">Ready to Publish</h4>
+              <p class="mb-4 section--secondary__para">
+                You can use this design as is, or you can make changes!
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <i class="icon icon--primary fas fa-heart fa-5x mb-4"></i>
+              <h4 class="mb-4 section--secondary__header">Made with Love</h4>
+              <p class="mb-4 section--secondary__para">
+                Is it really open source if it's not made with love?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="row gallery">
+          <div class="gallery__block col-6 col-md-6 col-lg-4">
+            <div class="gallery__cover">
+              <small class="upcase text-white">Category</small>
+              <p>Project Name</p>
+            </div>
+            <img
+              class="gallery__img"
+              src="../images/Rectangle (4).png"
+              alt=""
+            />
+          </div>
+          <div class="gallery__block col-6 col-md-6 col-lg-4">
+            <div class="gallery__cover">
+              <small class="upcase text-white">Category</small>
+              <p>Project Name</p>
+            </div>
+            <img
+              class="gallery__img"
+              src="../images/Rectangle (5).png"
+              alt=""
+            />
+          </div>
+          <div class="gallery__block col-6 col-md-6 col-lg-4">
+            <div class="gallery__cover">
+              <small class="upcase text-white">Category</small>
+              <p>Project Name</p>
+            </div>
+            <img
+              class="gallery__img"
+              src="../images/Rectangle (6).png"
+              alt=""
+            />
+          </div>
+          <div class="gallery__block col-6 col-md-6 col-lg-4">
+            <div class="gallery__cover">
+              <small class="upcase text-white">Category</small>
+              <p>Project Name</p>
+            </div>
+            <img
+              class="gallery__img"
+              src="../images/Rectangle (7).png"
+              alt=""
+            />
+          </div>
+          <div class="gallery__block col-6 col-md-6 col-lg-4">
+            <div class="gallery__cover">
+              <small class="upcase text-white">Category</small>
+              <p>Project Name</p>
+            </div>
+            <img
+              class="gallery__img"
+              src="../images/Rectangle (8).png"
+              alt=""
+            />
+          </div>
+          <div class="gallery__block col-6 col-md-6 col-lg-4">
+            <div class="gallery__cover">
+              <small class="upcase text-white">Category</small>
+              <p>Project Name</p>
+            </div>
+            <img
+              class="gallery__img"
+              src="../images/Rectangle (9).png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section section--bg-color--default">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
+            <h3>Free Download at Start Bootstrap!</h3>
+            <button class="btn btn-secondary upcase">Download Now!</button>
+          </div>
+        </div>
+      </section>
+      <section class="section section--secondary">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
+            <h3 class="section--secondary__header">Let's Get In Touch!</h3>
+            <div class="dash dash--primary"></div>
+            <p class="section__para section--secondary__para">
+              Ready to start your next project with us? Give us a call or send
+              us an email and we will get back to you as soon as possible!
+            </p>
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6">
+                <i class="icon icon--secondary fas fa-phone fa-5x"></i>
+                <p class="section--secondary__para">+1 (202) 555-0149</p>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <i class="icon icon--secondary fas fa-envelope fa-5x"></i>
+                <a class="link--primary d-block" href="#"
+                  >contact@yourwebsite.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        Copyright © 2019 - Start Bootstrap
+      </footer>
+    </main>
   </body>
 </html>
