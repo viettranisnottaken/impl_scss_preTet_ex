@@ -1,0 +1,45 @@
+.section {
+  position: relative;
+
+  &__bg-img {
+    margin: 0;
+    display: block;
+
+    &:first-child {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    left: 0;
+    right: 0;
+  }
+
+  &__para {
+    margin: 20px;
+  }
+
+  &--bg-color {
+    &--primary {
+      background-color: $primary-bg-color;
+    }
+
+    &--default {
+      background-color: $default-bg-color;
+    }
+  }
+
+  &--secondary {
+    &__header {
+      color: $default-color;
+    }
+
+    &__para {
+      color: $secondary-color;
+    }
+  }
+}

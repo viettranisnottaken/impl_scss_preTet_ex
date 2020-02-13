@@ -5,6 +5,7 @@ var CleanWebpackPlugin = require("clean-webpack-plugin").CleanWebpackPlugin;
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var TerserJSPlugin = require("terser-webpack-plugin");
+var ProvidePlugin = require("webpack").ProvidePlugin;
 
 module.exports = {
   devServer: {
@@ -20,7 +21,7 @@ module.exports = {
   optimization: {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
-  entry: ["./src/js/index.js", "./src/scss/main.scss"],
+  entry: ["bootstrap", "./src/js/index.js", "./src/scss/main.scss"],
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -35,8 +36,13 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "styles.min.css"
+    }),
+    new ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     })
   ],
+
   output: {
     filename: "main.min.js",
     path: path.resolve(__dirname, "dist")

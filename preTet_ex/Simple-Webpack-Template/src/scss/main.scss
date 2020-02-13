@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/solid";
@@ -12,9 +14,13 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "base/reset";
 @import "base/typography";
 
-@import "components/poster";
 @import "components/dropdown";
 @import "components/buttons";
+@import "components/section";
+@import "components/dash";
+@import "components/icon";
+@import "components/link";
+@import "components/gallery";
 
 @import "layout/grid";
 @import "layout/header";

@@ -1,0 +1,11 @@
+.icon {
+  margin: 10px;
+
+  &--primary {
+    color: $primary-bg-color;
+  }
+
+  &--secondary {
+    color: $secondary-color;
+  }
+}
